@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <math.h>
-
-// Challenge 11 : Equation deuxième degré
+// les condition
+// Challenge 11 : Programme guidé par menu pour convertir l'année
 // prof Aymane
 // prof Said
 // étudiant Bilal EZZAIM
@@ -10,15 +9,47 @@ void premierFonction()
 {
     printf("                 =================================================================================\n");
     printf("                 =================================================================================\n");
-    printf("                 ====================== Challenge 11 : Equation deuxième degré  ===================\n");
+    printf("                 === Challenge 11 : affiche d'une manière aléatoire un des jours de la semaine ===\n");
     printf("                 =================================================================================\n");
     printf("                 =================================================================================\n");
 }
 
 int main()
 {
+    //
     premierFonction();
+    int jour;
+    printf("Ecrivez un nimiro entre 1 et 7 : ");
+    scanf("%d", &jour);
 
+    switch (jour)
+    {
+    case 1:
+        printf("Dimanche");
+        break;
+    case 2:
+        printf("Lundi");
+        break;
+    case 3:
+        printf("Mardi");
+        break;
+    case 4:
+        printf("Mercredi");
+        break;
+    case 5:
+        printf("Jeudi");
+        break;
+    case 6:
+        printf("Vendredi");
+        break;
+    case 7:
+        printf("Samedi");
+        break;
+
+    default:
+    printf("un nimiro entre 1 et 7 ");
+        break;
+    }
 
     return 0;
 }
