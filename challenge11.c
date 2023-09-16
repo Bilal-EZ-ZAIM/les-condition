@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 // les condition
 // Challenge 11 : Programme guidé par menu pour convertir l'année
 // prof Aymane
@@ -18,9 +20,8 @@ int main()
 {
     //
     premierFonction();
-    int jour;
-    printf("Ecrivez un nimiro entre 1 et 7 : ");
-    scanf("%d", &jour);
+    srand(time(NULL));
+    int jour = (rand() % 7) + 1;
 
     switch (jour)
     {
@@ -47,7 +48,7 @@ int main()
         break;
 
     default:
-    printf("un nimiro entre 1 et 7 ");
+        printf("un nimiro entre 1 et 7 ");
         break;
     }
 
